@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-10T02:53:59.656Z
+ * Timestamp: 2026-02-10T02:57:53.594Z
  * 
  * Includes athlete names and country codes for regional attribution.
  */
@@ -12,7 +12,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-1",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "JPN",
+    "countryCode": "SUI",
     "athletes": [
       "Franjo von Allmen"
     ]
@@ -21,7 +21,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-2",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "JPN",
+    "countryCode": "SUI",
     "athletes": [
       "Franjo von Allmen"
     ]
@@ -30,7 +30,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-3",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "ITA",
+    "countryCode": "USA",
     "athletes": [
       "Danny O'Shea"
     ]
@@ -39,7 +39,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-4",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "NOR",
+    "countryCode": "USA",
     "athletes": [
       "Ellie Kam"
     ]
@@ -48,7 +48,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-5",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "NOR",
+    "countryCode": "USA",
     "athletes": [
       "Ilia Malinin"
     ]
@@ -57,7 +57,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-6",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "NOR",
+    "countryCode": "USA",
     "athletes": [
       "Amber Glenn"
     ]
@@ -66,7 +66,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-7",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "SUI",
+    "countryCode": "USA",
     "athletes": [
       "Alysa Liu"
     ]
@@ -75,7 +75,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-8",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "SUI",
+    "countryCode": "USA",
     "athletes": [
       "Breezy Johnson"
     ]
@@ -84,7 +84,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-9",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "SUI",
+    "countryCode": "USA",
     "athletes": [
       "Madison Chock"
     ]
@@ -93,7 +93,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-10",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "GER",
+    "countryCode": "USA",
     "athletes": [
       "Evan Bates"
     ]
@@ -102,7 +102,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-11",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "GER",
+    "countryCode": "SUI",
     "athletes": [
       "Tanguy Nef"
     ]
@@ -111,7 +111,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-12",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "AUT",
+    "countryCode": "SUI",
     "athletes": [
       "Mathilde Gremaud"
     ]
@@ -120,7 +120,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-13",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "USA",
+    "countryCode": "SWE",
     "athletes": [
       "Frida Karlsson"
     ]
@@ -129,7 +129,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-14",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "USA",
+    "countryCode": "NOR",
     "athletes": [
       "Sander Eitrem"
     ]
@@ -138,7 +138,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-15",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "SWE",
+    "countryCode": "NOR",
     "athletes": [
       "Anna Odine Stroem"
     ]
@@ -147,7 +147,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-16",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "NED",
+    "countryCode": "NOR",
     "athletes": [
       "Johannes Høsflot Klæbo"
     ]
@@ -156,7 +156,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-17",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "FRA",
+    "countryCode": "NED",
     "athletes": [
       "Jutta Leerdam"
     ]
@@ -165,7 +165,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-18",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "CZE",
+    "countryCode": "JPN",
     "athletes": [
       "Kira Kimura"
     ]
@@ -174,7 +174,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-19",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "KOR",
+    "countryCode": "JPN",
     "athletes": [
       "Kokomo Murase"
     ]
@@ -183,7 +183,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-20",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "FRA",
+    "countryCode": "ITA",
     "athletes": [
       "Francesca Lollobrigida"
     ]
@@ -192,7 +192,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-21",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "CHN",
+    "countryCode": "GER",
     "athletes": [
       "Philipp Raimund"
     ]
@@ -201,7 +201,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-22",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "CAN",
+    "countryCode": "GER",
     "athletes": [
       "Max Langenhan"
     ]
@@ -210,7 +210,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-23",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "CAN",
+    "countryCode": "FRA",
     "athletes": [
       "Lou Jeanmonnot"
     ]
@@ -219,7 +219,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-24",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "SLO",
+    "countryCode": "FRA",
     "athletes": [
       "Julia Simon"
     ]
@@ -228,7 +228,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-25",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "ITA",
+    "countryCode": "FRA",
     "athletes": [
       "Eric Perrot"
     ]
@@ -237,7 +237,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "id": "medal-26",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "ITA",
+    "countryCode": "FRA",
     "athletes": [
       "Quentin Fillon Maillet"
     ]
