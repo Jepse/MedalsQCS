@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-10T12:18:19.440Z
+ * Timestamp: 2026-02-10T13:33:16.718Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -15,7 +15,16 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "ITA",
     "athletes": [
-      "Francesca Lollobrigida"
+      "Elisa Confortola"
+    ]
+  },
+  {
+    "id": "ita-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "ITA",
+    "athletes": [
+      "Thomas Nadalini"
     ]
   },
   {
@@ -91,6 +100,87 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "nor-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "NOR",
+    "athletes": [
+      "Johannes Høsflot Klæbo"
+    ]
+  },
+  {
+    "id": "nor-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "NOR",
+    "athletes": [
+      "Johannes Høsflot Klæbo"
+    ]
+  },
+  {
+    "id": "nor-gold-3",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "NOR",
+    "athletes": [
+      "Sander Eitrem"
+    ]
+  },
+  {
+    "id": "nor-gold-4",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "NOR",
+    "athletes": [
+      "Anna Odine Stroem"
+    ]
+  },
+  {
+    "id": "nor-gold-5",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "NOR",
+    "athletes": [
+      "Birk Ruud"
+    ]
+  },
+  {
+    "id": "nor-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "NOR",
+    "athletes": [
+      "Athlete from NOR"
+    ]
+  },
+  {
+    "id": "nor-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "NOR",
+    "athletes": [
+      "Athlete from NOR"
+    ]
+  },
+  {
+    "id": "nor-bronze-2",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "NOR",
+    "athletes": [
+      "Athlete from NOR"
+    ]
+  },
+  {
+    "id": "nor-bronze-3",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "NOR",
+    "athletes": [
+      "Athlete from NOR"
+    ]
+  },
+  {
     "id": "jpn-gold-1",
     "event": "Event",
     "medal": "Gold",
@@ -154,60 +244,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
-    "id": "nor-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "NOR",
-    "athletes": [
-      "Sander Eitrem"
-    ]
-  },
-  {
-    "id": "nor-gold-2",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "NOR",
-    "athletes": [
-      "Anna Odine Stroem"
-    ]
-  },
-  {
-    "id": "nor-gold-3",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "NOR",
-    "athletes": [
-      "Johannes Høsflot Klæbo"
-    ]
-  },
-  {
-    "id": "nor-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "NOR",
-    "athletes": [
-      "Athlete from NOR"
-    ]
-  },
-  {
-    "id": "nor-bronze-1",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "NOR",
-    "athletes": [
-      "Athlete from NOR"
-    ]
-  },
-  {
-    "id": "nor-bronze-2",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "NOR",
-    "athletes": [
-      "Athlete from NOR"
-    ]
-  },
-  {
     "id": "sui-gold-1",
     "event": "Event",
     "medal": "Gold",
@@ -253,12 +289,93 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "swe-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "SWE",
+    "athletes": [
+      "Linn Svahn"
+    ]
+  },
+  {
+    "id": "swe-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "SWE",
+    "athletes": [
+      "Frida Karlsson"
+    ]
+  },
+  {
+    "id": "swe-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "SWE",
+    "athletes": [
+      "Athlete from SWE"
+    ]
+  },
+  {
+    "id": "swe-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "SWE",
+    "athletes": [
+      "Athlete from SWE"
+    ]
+  },
+  {
+    "id": "swe-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "SWE",
+    "athletes": [
+      "Athlete from SWE"
+    ]
+  },
+  {
+    "id": "usa-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "USA",
+    "athletes": [
+      "Danny O'Shea"
+    ]
+  },
+  {
+    "id": "usa-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "USA",
+    "athletes": [
+      "Ellie Kam"
+    ]
+  },
+  {
+    "id": "usa-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "USA",
+    "athletes": [
+      "Athlete from USA"
+    ]
+  },
+  {
+    "id": "usa-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "USA",
+    "athletes": [
+      "Athlete from USA"
+    ]
+  },
+  {
     "id": "ger-gold-1",
     "event": "Event",
     "medal": "Gold",
     "countryCode": "GER",
     "athletes": [
-      "Philipp Raimund"
+      "Athlete from GER"
     ]
   },
   {
@@ -267,7 +384,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "GER",
     "athletes": [
-      "Max Langenhan"
+      "Athlete from GER"
     ]
   },
   {
@@ -325,39 +442,30 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
-    "id": "usa-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "USA",
-    "athletes": [
-      "Danny O'Shea"
-    ]
-  },
-  {
-    "id": "usa-gold-2",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "USA",
-    "athletes": [
-      "Ellie Kam"
-    ]
-  },
-  {
-    "id": "swe-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "SWE",
-    "athletes": [
-      "Frida Karlsson"
-    ]
-  },
-  {
-    "id": "swe-silver-1",
+    "id": "can-silver-1",
     "event": "Event",
     "medal": "Silver",
-    "countryCode": "SWE",
+    "countryCode": "CAN",
     "athletes": [
-      "Athlete from SWE"
+      "Athlete from CAN"
+    ]
+  },
+  {
+    "id": "can-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "CAN",
+    "athletes": [
+      "Athlete from CAN"
+    ]
+  },
+  {
+    "id": "can-bronze-2",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "CAN",
+    "athletes": [
+      "Athlete from CAN"
     ]
   },
   {
@@ -384,7 +492,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "FRA",
     "athletes": [
-      "Lou Jeanmonnot"
+      "Athlete from FRA"
     ]
   },
   {
@@ -433,6 +541,24 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "nzl-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "NZL",
+    "athletes": [
+      "Athlete from NZL"
+    ]
+  },
+  {
+    "id": "nzl-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "NZL",
+    "athletes": [
+      "Athlete from NZL"
+    ]
+  },
+  {
     "id": "chn-silver-1",
     "event": "Event",
     "medal": "Silver",
@@ -448,24 +574,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "CHN",
     "athletes": [
       "Athlete from CHN"
-    ]
-  },
-  {
-    "id": "can-bronze-1",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "CAN",
-    "athletes": [
-      "Athlete from CAN"
-    ]
-  },
-  {
-    "id": "can-bronze-2",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "CAN",
-    "athletes": [
-      "Athlete from CAN"
     ]
   },
   {
@@ -487,21 +595,21 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
-    "id": "nzl-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "NZL",
-    "athletes": [
-      "Athlete from NZL"
-    ]
-  },
-  {
     "id": "bul-bronze-1",
     "event": "Event",
     "medal": "Bronze",
     "countryCode": "BUL",
     "athletes": [
       "Athlete from BUL"
+    ]
+  },
+  {
+    "id": "bel-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "BEL",
+    "athletes": [
+      "Athlete from BEL"
     ]
   }
 ];
