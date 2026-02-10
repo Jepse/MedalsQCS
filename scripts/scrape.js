@@ -7,10 +7,11 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const MEDAL_TABLE_URL = 'https://www.espn.com/olympics/winter/2026/medals';
+const ATHLETES_URL = 'https://www.espn.com/olympics/winter/2026/medals/_/view/athletes';
 const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
 
 (async () => {
-  console.log('Starting ESPN Medal Table Scraper...');
+  console.log('Starting Hybrid ESPN Scraper...');
   const browser = await chromium.launch({
     headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox']
@@ -23,39 +24,31 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
   const page = await context.newPage();
 
   try {
-    console.log('Navigating to ESPN medal table...');
+    // STEP 1: Get complete medal counts from country table
+    console.log('Step 1: Getting complete medal counts from country table...');
     await page.goto(MEDAL_TABLE_URL, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await page.waitForTimeout(10000);
 
-    await page.screenshot({ path: path.join(__dirname, 'debug-medals.png'), fullPage: true });
-
-    // Extract country medal data
-    const countryData = await page.evaluate(() => {
-      const results = [];
+    const countryMedals = await page.evaluate(() => {
+      const results = new Map();
       const tables = document.querySelectorAll('table');
 
-      console.log(`Found ${tables.length} tables`);
-
-      tables.forEach((table, tableIdx) => {
+      tables.forEach((table) => {
         const rows = table.querySelectorAll('tbody tr');
-        console.log(`Table ${tableIdx} has ${rows.length} rows`);
 
-        rows.forEach((row, rowIdx) => {
+        rows.forEach((row) => {
           const cells = row.querySelectorAll('td');
           if (cells.length < 5) return;
 
-          // Get country name/code from first cell
           const countryCell = cells[0];
-
-          // Extract country code from flag image
           let countryCode = '';
+
           const flagImg = countryCell.querySelector('img');
           if (flagImg) {
             const src = flagImg.getAttribute('src') || '';
             const srcMatch = src.match(/countries\/\d+\/([a-z]{2,3})\./i);
             if (srcMatch) {
               countryCode = srcMatch[1].toUpperCase();
-              // Convert 2-letter to 3-letter codes
               const map = {
                 'US': 'USA', 'CH': 'SUI', 'GB': 'GBR', 'CA': 'CAN',
                 'DE': 'GER', 'FR': 'FRA', 'IT': 'ITA', 'JP': 'JPN',
@@ -63,16 +56,10 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
                 'CN': 'CHN', 'KR': 'KOR', 'FI': 'FIN', 'SI': 'SLO',
                 'ES': 'ESP', 'AU': 'AUS', 'CZ': 'CZE'
               };
-              if (map[countryCode]) {
-                countryCode = map[countryCode];
-              }
+              if (map[countryCode]) countryCode = map[countryCode];
             }
           }
 
-          // Extract country name
-          const countryName = countryCell.textContent?.trim().replace(/\s+/g, ' ') || '';
-
-          // Extract medal counts from last 4 cells: Gold, Silver, Bronze, Total
           const goldText = cells[cells.length - 4]?.textContent?.trim() || '0';
           const silverText = cells[cells.length - 3]?.textContent?.trim() || '0';
           const bronzeText = cells[cells.length - 2]?.textContent?.trim() || '0';
@@ -82,10 +69,67 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
           const bronze = parseInt(bronzeText) || 0;
 
           if (countryCode && (gold > 0 || silver > 0 || bronze > 0)) {
-            if (rowIdx < 10) {
-              console.log(`${countryCode}: G${gold} S${silver} B${bronze}`);
+            results.set(countryCode, { gold, silver, bronze });
+          }
+        });
+      });
+
+      return Array.from(results.entries()).map(([code, medals]) => ({ countryCode: code, ...medals }));
+    });
+
+    console.log(`Found ${countryMedals.length} countries with medals`);
+
+    // STEP 2: Get athlete names from athletes page
+    console.log('Step 2: Getting athlete names...');
+    await page.goto(ATHLETES_URL, { waitUntil: 'domcontentloaded', timeout: 30000 });
+    await page.waitForTimeout(12000);
+
+    const athleteData = await page.evaluate(() => {
+      const results = [];
+      const tables = document.querySelectorAll('table');
+
+      tables.forEach((table) => {
+        const rows = table.querySelectorAll('tbody tr');
+
+        rows.forEach((row) => {
+          const cells = row.querySelectorAll('td');
+          if (cells.length < 5) return;
+
+          const nameCell = cells[0];
+          const nameLink = nameCell.querySelector('a');
+          let athleteName = nameLink ? nameLink.textContent?.trim() : nameCell.textContent?.trim();
+          athleteName = athleteName?.replace(/\s+/g, ' ').trim() || '';
+
+          if (!athleteName || athleteName.length < 3) return;
+
+          let countryCode = '';
+          const flagImg = nameCell.querySelector('img');
+          if (flagImg) {
+            const src = flagImg.getAttribute('src') || '';
+            const srcMatch = src.match(/countries\/\d+\/([a-z]{2,3})\./i);
+            if (srcMatch) {
+              countryCode = srcMatch[1].toUpperCase();
+              const map = {
+                'US': 'USA', 'CH': 'SUI', 'GB': 'GBR', 'CA': 'CAN',
+                'DE': 'GER', 'FR': 'FRA', 'IT': 'ITA', 'JP': 'JPN',
+                'NO': 'NOR', 'SE': 'SWE', 'AT': 'AUT', 'NL': 'NED',
+                'CN': 'CHN', 'KR': 'KOR', 'FI': 'FIN', 'SI': 'SLO',
+                'ES': 'ESP', 'AU': 'AUS', 'CZ': 'CZE'
+              };
+              if (map[countryCode]) countryCode = map[countryCode];
             }
-            results.push({ countryCode, countryName, gold, silver, bronze });
+          }
+
+          const goldText = cells[cells.length - 4]?.textContent?.trim() || '0';
+          const silverText = cells[cells.length - 3]?.textContent?.trim() || '0';
+          const bronzeText = cells[cells.length - 2]?.textContent?.trim() || '0';
+
+          const gold = parseInt(goldText) || 0;
+          const silver = parseInt(silverText) || 0;
+          const bronze = parseInt(bronzeText) || 0;
+
+          if ((gold > 0 || silver > 0 || bronze > 0) && athleteName && countryCode) {
+            results.push({ athleteName, countryCode, gold, silver, bronze });
           }
         });
       });
@@ -93,69 +137,110 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
       return results;
     });
 
-    console.log(`\nFound ${countryData.length} countries with medals`);
+    console.log(`Found ${athleteData.length} athletes with names`);
 
-    // Convert country medal counts to individual medal records
-    // Since we don't have individual athlete names from this view,
-    // we'll create generic medal entries
+    // STEP 3: Create medal records using country totals and athlete names where available
     const scrapedData = [];
     let medalId = 1;
 
-    countryData.forEach(country => {
-      // Create individual medal entries for each medal
+    // Create a pool of athlete names by country
+    const athletesByCountry = {};
+    athleteData.forEach(athlete => {
+      if (!athletesByCountry[athlete.countryCode]) {
+        athletesByCountry[athlete.countryCode] = [];
+      }
+      // Add athlete name multiple times based on their medal count
+      for (let i = 0; i < athlete.gold; i++) {
+        athletesByCountry[athlete.countryCode].push({ name: athlete.athleteName, type: 'Gold' });
+      }
+      for (let i = 0; i < athlete.silver; i++) {
+        athletesByCountry[athlete.countryCode].push({ name: athlete.athleteName, type: 'Silver' });
+      }
+      for (let i = 0; i < athlete.bronze; i++) {
+        athletesByCountry[athlete.countryCode].push({ name: athlete.athleteName, type: 'Bronze' });
+      }
+    });
+
+    // Create medal records using country totals
+    countryMedals.forEach(country => {
+      const athletes = athletesByCountry[country.countryCode] || [];
+
+      // Gold medals
       for (let i = 0; i < country.gold; i++) {
+        const athleteEntry = athletes.find(a => a.type === 'Gold');
+        const athleteName = athleteEntry ? athleteEntry.name : `Athlete from ${country.countryCode}`;
+        if (athleteEntry) {
+          athletes.splice(athletes.indexOf(athleteEntry), 1); // Remove used athlete
+        }
+
         scrapedData.push({
           id: `${country.countryCode.toLowerCase()}-gold-${i + 1}`,
           event: 'Event',
           medal: 'Gold',
           countryCode: country.countryCode,
-          athletes: [`Athlete from ${country.countryCode}`]
+          athletes: [athleteName]
         });
       }
+
+      // Silver medals
       for (let i = 0; i < country.silver; i++) {
+        const athleteEntry = athletes.find(a => a.type === 'Silver');
+        const athleteName = athleteEntry ? athleteEntry.name : `Athlete from ${country.countryCode}`;
+        if (athleteEntry) {
+          athletes.splice(athletes.indexOf(athleteEntry), 1);
+        }
+
         scrapedData.push({
           id: `${country.countryCode.toLowerCase()}-silver-${i + 1}`,
           event: 'Event',
           medal: 'Silver',
           countryCode: country.countryCode,
-          athletes: [`Athlete from ${country.countryCode}`]
+          athletes: [athleteName]
         });
       }
+
+      // Bronze medals
       for (let i = 0; i < country.bronze; i++) {
+        const athleteEntry = athletes.find(a => a.type === 'Bronze');
+        const athleteName = athleteEntry ? athleteEntry.name : `Athlete from ${country.countryCode}`;
+        if (athleteEntry) {
+          athletes.splice(athletes.indexOf(athleteEntry), 1);
+        }
+
         scrapedData.push({
           id: `${country.countryCode.toLowerCase()}-bronze-${i + 1}`,
           event: 'Event',
           medal: 'Bronze',
           countryCode: country.countryCode,
-          athletes: [`Athlete from ${country.countryCode}`]
+          athletes: [athleteName]
         });
       }
     });
 
-    console.log(`Generated ${scrapedData.length} medal records`);
+    console.log(`\nGenerated ${scrapedData.length} medal records`);
     console.log(`Gold: ${scrapedData.filter(m => m.medal === 'Gold').length}`);
     console.log(`Silver: ${scrapedData.filter(m => m.medal === 'Silver').length}`);
     console.log(`Bronze: ${scrapedData.filter(m => m.medal === 'Bronze').length}`);
+
+    const withRealNames = scrapedData.filter(m => !m.athletes[0].startsWith('Athlete from')).length;
+    console.log(`Medals with real athlete names: ${withRealNames}`);
 
     if (scrapedData.length > 0) {
       const fileContent = `import { MedalWin, MedalType } from '../types';
 
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
- * Scraped from: ${MEDAL_TABLE_URL}
+ * Scraped from: ${MEDAL_TABLE_URL} and ${ATHLETES_URL}
  * Timestamp: ${new Date().toISOString()}
  * 
- * Complete medal counts (gold, silver, bronze) for all countries.
- * Note: Athlete names are generic placeholders. Regional attribution
- * will work once we match real athlete names from a detailed source.
+ * Complete medal counts with real athlete names where available.
+ * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
  */
 export const OLYMPIC_DATA: MedalWin[] = ${JSON.stringify(scrapedData, null, 2)};
 `;
 
       fs.writeFileSync(OUTPUT_FILE, fileContent);
-      console.log(`✅ Successfully wrote ${scrapedData.length} medals with complete counts!`);
-    } else {
-      console.log('⚠️  No medal data found.');
+      console.log(`✅ Successfully wrote ${scrapedData.length} medals!`);
     }
 
   } catch (error) {

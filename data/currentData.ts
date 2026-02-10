@@ -2,12 +2,11 @@ import { MedalWin, MedalType } from '../types';
 
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
- * Scraped from: https://www.espn.com/olympics/winter/2026/medals
- * Timestamp: 2026-02-10T03:03:43.556Z
+ * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
+ * Timestamp: 2026-02-10T03:08:41.656Z
  * 
- * Complete medal counts (gold, silver, bronze) for all countries.
- * Note: Athlete names are generic placeholders. Regional attribution
- * will work once we match real athlete names from a detailed source.
+ * Complete medal counts with real athlete names where available.
+ * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
  */
 export const OLYMPIC_DATA: MedalWin[] = [
   {
@@ -16,7 +15,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "ITA",
     "athletes": [
-      "Athlete from ITA"
+      "Francesca Lollobrigida"
     ]
   },
   {
@@ -97,7 +96,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "JPN",
     "athletes": [
-      "Athlete from JPN"
+      "Kira Kimura"
     ]
   },
   {
@@ -106,7 +105,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "JPN",
     "athletes": [
-      "Athlete from JPN"
+      "Kokomo Murase"
     ]
   },
   {
@@ -160,7 +159,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "NOR",
     "athletes": [
-      "Athlete from NOR"
+      "Sander Eitrem"
     ]
   },
   {
@@ -169,7 +168,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "NOR",
     "athletes": [
-      "Athlete from NOR"
+      "Anna Odine Stroem"
     ]
   },
   {
@@ -178,7 +177,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "NOR",
     "athletes": [
-      "Athlete from NOR"
+      "Johannes Høsflot Klæbo"
     ]
   },
   {
@@ -214,7 +213,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "SUI",
     "athletes": [
-      "Athlete from SUI"
+      "Franjo von Allmen"
     ]
   },
   {
@@ -223,7 +222,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "SUI",
     "athletes": [
-      "Athlete from SUI"
+      "Franjo von Allmen"
     ]
   },
   {
@@ -232,7 +231,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "SUI",
     "athletes": [
-      "Athlete from SUI"
+      "Tanguy Nef"
     ]
   },
   {
@@ -259,7 +258,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "GER",
     "athletes": [
-      "Athlete from GER"
+      "Philipp Raimund"
     ]
   },
   {
@@ -268,7 +267,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "GER",
     "athletes": [
-      "Athlete from GER"
+      "Max Langenhan"
     ]
   },
   {
@@ -331,7 +330,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "USA",
     "athletes": [
-      "Athlete from USA"
+      "Danny O'Shea"
     ]
   },
   {
@@ -340,7 +339,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "USA",
     "athletes": [
-      "Athlete from USA"
+      "Ellie Kam"
     ]
   },
   {
@@ -349,7 +348,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "SWE",
     "athletes": [
-      "Athlete from SWE"
+      "Frida Karlsson"
     ]
   },
   {
@@ -367,7 +366,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "NED",
     "athletes": [
-      "Athlete from NED"
+      "Jutta Leerdam"
     ]
   },
   {
@@ -385,7 +384,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "FRA",
     "athletes": [
-      "Athlete from FRA"
+      "Lou Jeanmonnot"
     ]
   },
   {
