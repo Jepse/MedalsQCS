@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-10T13:33:16.718Z
+ * Timestamp: 2026-02-10T14:30:25.256Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -289,6 +289,96 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "aut-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
+    "id": "aut-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
+    "id": "aut-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
+    "id": "aut-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
+    "id": "aut-silver-3",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
+    "id": "usa-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "USA",
+    "athletes": [
+      "Danny O'Shea"
+    ]
+  },
+  {
+    "id": "usa-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "USA",
+    "athletes": [
+      "Ellie Kam"
+    ]
+  },
+  {
+    "id": "usa-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "USA",
+    "athletes": [
+      "Athlete from USA"
+    ]
+  },
+  {
+    "id": "usa-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "USA",
+    "athletes": [
+      "Athlete from USA"
+    ]
+  },
+  {
+    "id": "usa-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "USA",
+    "athletes": [
+      "Athlete from USA"
+    ]
+  },
+  {
     "id": "swe-gold-1",
     "event": "Event",
     "medal": "Gold",
@@ -334,42 +424,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
-    "id": "usa-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "USA",
-    "athletes": [
-      "Danny O'Shea"
-    ]
-  },
-  {
-    "id": "usa-gold-2",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "USA",
-    "athletes": [
-      "Ellie Kam"
-    ]
-  },
-  {
-    "id": "usa-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "USA",
-    "athletes": [
-      "Athlete from USA"
-    ]
-  },
-  {
-    "id": "usa-silver-2",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "USA",
-    "athletes": [
-      "Athlete from USA"
-    ]
-  },
-  {
     "id": "ger-gold-1",
     "event": "Event",
     "medal": "Gold",
@@ -393,7 +447,16 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Silver",
     "countryCode": "GER",
     "athletes": [
-      "Athlete from GER"
+      "Emma Aicher"
+    ]
+  },
+  {
+    "id": "ger-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "GER",
+    "athletes": [
+      "Emma Aicher"
     ]
   },
   {
@@ -403,42 +466,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "GER",
     "athletes": [
       "Athlete from GER"
-    ]
-  },
-  {
-    "id": "aut-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "AUT",
-    "athletes": [
-      "Athlete from AUT"
-    ]
-  },
-  {
-    "id": "aut-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "AUT",
-    "athletes": [
-      "Athlete from AUT"
-    ]
-  },
-  {
-    "id": "aut-silver-2",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "AUT",
-    "athletes": [
-      "Athlete from AUT"
-    ]
-  },
-  {
-    "id": "aut-silver-3",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "AUT",
-    "athletes": [
-      "Athlete from AUT"
     ]
   },
   {
