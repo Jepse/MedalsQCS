@@ -1,9 +1,9 @@
-import { MedalWin, MedalType } from '../types';
+﻿import { MedalWin, MedalType } from '../types';
 
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-10T03:23:18.002Z
+ * Timestamp: 2026-02-10T03:34:11.807Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -456,7 +456,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Bronze",
     "countryCode": "CAN",
     "athletes": [
-      "Val�rie Maltais"
+      "Valérie Maltais"
     ]
   },
   {

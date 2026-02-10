@@ -6,27 +6,34 @@ const isRegionalWin = (winAthletes: string[], region: RegionDefinition): boolean
   if (winAthletes.length === 0) return false;
 
   let matchCount = 0;
-  
+
   // Normalize checking (case insensitive, basic trim)
   const normalizedRegionAthletes = region.athletes.map(a => a.toLowerCase().trim());
 
+  console.log(`[DEBUG] Checking region ${region.name} for athletes:`, winAthletes);
+  console.log(`[DEBUG] Region has ${normalizedRegionAthletes.length} athletes`);
+
   winAthletes.forEach(athleteName => {
     // Check for exact match or substring match (e.g. "Bruce Mouat" in "Team Mouat")
-    const isMatch = normalizedRegionAthletes.some(ra => 
-       athleteName.toLowerCase().includes(ra) || ra.includes(athleteName.toLowerCase())
+    const isMatch = normalizedRegionAthletes.some(ra =>
+      athleteName.toLowerCase().includes(ra) || ra.includes(athleteName.toLowerCase())
     );
+    console.log(`[DEBUG] Athlete "${athleteName}" match in ${region.name}:`, isMatch);
     if (isMatch) matchCount++;
   });
 
+  const result = (matchCount / winAthletes.length) > 0.5;
+  console.log(`[DEBUG] ${region.name}: ${matchCount}/${winAthletes.length} matched, result: ${result}`);
+
   // Logic Gate: If > 50% of the team is from the region, claim the medal
-  return (matchCount / winAthletes.length) > 0.5;
+  return result;
 };
 
 export const processMedals = (
-  rawMedals: MedalWin[], 
+  rawMedals: MedalWin[],
   baseCountries: CountryStats[]
 ): { stats: CountryStats[], logs: TransferLog[] } => {
-  
+
   // 1. Deep copy base stats to avoid mutation
   const statsMap = new Map<string, CountryStats>();
   baseCountries.forEach(c => statsMap.set(c.countryCode, { ...c, gold: 0, silver: 0, bronze: 0, total: 0 }));
@@ -58,7 +65,7 @@ export const processMedals = (
       if (win.countryCode === region.parentCountryCode) {
         if (isRegionalWin(win.athletes, region)) {
           assignedToCode = region.id;
-          
+
           // Log the transfer
           logs.push({
             id: win.id,
@@ -81,19 +88,19 @@ export const processMedals = (
       else if (win.medal === MedalType.BRONZE) stat.bronze++;
       stat.total++;
     } else {
-        // Fallback for nations not in INITIAL_COUNTRY_STATS (like NOR/GER in mock)
-        // If we were building a full app, we'd fetch these details. 
-        // For now, we add them dynamically if missing.
-        statsMap.set(assignedToCode, {
-            rank: 0,
-            countryCode: assignedToCode,
-            countryName: assignedToCode, // Fallback name
-            flagUrl: `https://flagcdn.com/w320/${assignedToCode.toLowerCase().slice(0,2)}.png`, // Guessing flag URL
-            gold: win.medal === MedalType.GOLD ? 1 : 0,
-            silver: win.medal === MedalType.SILVER ? 1 : 0,
-            bronze: win.medal === MedalType.BRONZE ? 1 : 0,
-            total: 1
-        });
+      // Fallback for nations not in INITIAL_COUNTRY_STATS (like NOR/GER in mock)
+      // If we were building a full app, we'd fetch these details. 
+      // For now, we add them dynamically if missing.
+      statsMap.set(assignedToCode, {
+        rank: 0,
+        countryCode: assignedToCode,
+        countryName: assignedToCode, // Fallback name
+        flagUrl: `https://flagcdn.com/w320/${assignedToCode.toLowerCase().slice(0, 2)}.png`, // Guessing flag URL
+        gold: win.medal === MedalType.GOLD ? 1 : 0,
+        silver: win.medal === MedalType.SILVER ? 1 : 0,
+        bronze: win.medal === MedalType.BRONZE ? 1 : 0,
+        total: 1
+      });
     }
   });
 

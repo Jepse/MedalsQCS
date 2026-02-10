@@ -260,7 +260,7 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
 export const OLYMPIC_DATA: MedalWin[] = ${JSON.stringify(scrapedData, null, 2)};
 `;
 
-      fs.writeFileSync(OUTPUT_FILE, fileContent);
+      fs.writeFileSync(OUTPUT_FILE, fileContent, 'utf8');
       console.log(`✅ Successfully wrote ${scrapedData.length} medals!`);
     }
 
