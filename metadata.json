@@ -1,0 +1,5 @@
+{
+  "name": "Regional Medal Re-Attributor",
+  "description": "A stateless dashboard that re-attributes Olympic medals from parent nations to specific regions (Quebec, Scotland, Catalonia) based on athlete origin.",
+  "requestFramePermissions": []
+}
