@@ -1,101 +1,163 @@
-const { chromium } = require('playwright');
-const fs = require('fs');
-const path = require('path');
+import { chromium } from 'playwright';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-// Configuration
-const MEDALLISTS_URL = 'https://www.olympics.com/en/milano-cortina-2026/medals/medallists';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// ESPN is more scraper-friendly than Olympics.com
+const MEDAL_TABLE_URL = 'https://www.espn.com/olympics/winter/2026/medals';
 const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
 
 (async () => {
-  console.log('Starting Scraper...');
-  const browser = await chromium.launch({ headless: true });
-  const page = await browser.newPage();
+  console.log('Starting ESPN Scraper...');
+  const browser = await chromium.launch({
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
+
+  const context = await browser.newContext({
+    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+  });
+
+  const page = await context.newPage();
 
   try {
-    console.log(`Navigating to ${MEDALLISTS_URL}...`);
-    await page.goto(MEDALLISTS_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
+    console.log(`Navigating to ${MEDAL_TABLE_URL}...`);
 
-    // Note: Since the 2026 page might be empty or change structure, 
-    // this selector logic targets the standard Olympic tabular structure.
-    // You may need to inspect the 2026 page once live to adjust class names.
-    
-    // Waiting for the main container
-    // We assume there is a list or table of medallists
-    // If the page is empty (pre-games), this might time out or return empty array.
-    
+    // Use domcontentloaded instead of networkidle - much faster
+    await page.goto(MEDAL_TABLE_URL, {
+      waitUntil: 'domcontentloaded',
+      timeout: 30000
+    });
+
+    console.log('Waiting for content to render...');
+    // Give it time for JavaScript to execute
+    await page.waitForTimeout(10000);
+
+    // Take a screenshot for debugging
+    const screenshotPath = path.join(__dirname, 'debug-espn-screenshot.png');
+    await page.screenshot({ path: screenshotPath, fullPage: true });
+    console.log(`Screenshot saved to ${screenshotPath}`);
+
     const scrapedData = await page.evaluate(() => {
       const results = [];
-      const rows = document.querySelectorAll('[data-cy="medallist-row"], .medallist-row, tr.medalist'); // Heuristic selectors
+
+      // ESPN uses table structure for medals
+      const rows = document.querySelectorAll('table tbody tr, .Table__TR, tr[class*="Table"]');
+
+      console.log(`Found ${rows.length} potential rows`);
 
       rows.forEach((row, index) => {
-        // Extract Country
-        const countryEl = row.querySelector('.country-flag, [data-cy="country-code"]');
-        const countryCode = countryEl ? countryEl.innerText.trim() : 'UNK';
+        try {
+          const cells = Array.from(row.querySelectorAll('td, th, [class*="Table__TD"]'));
 
-        // Extract Medal
-        let medal = 'Bronze';
-        const text = row.innerText.toLowerCase();
-        if (text.includes('gold')) medal = 'Gold';
-        else if (text.includes('silver')) medal = 'Silver';
+          // Skip header rows or rows with too few cells
+          if (cells.length < 4) return;
 
-        // Extract Event
-        const eventEl = row.querySelector('.event-name, [data-cy="event-title"]');
-        const event = eventEl ? eventEl.innerText.trim() : 'Unknown Event';
+          // Extract text from cells
+          const cellTexts = cells.map(c => c.textContent?.trim() || '');
 
-        // Extract Athletes
-        // Usually a list of names or a single name
-        const nameEls = row.querySelectorAll('.athlete-name, [data-cy="athlete-name"]');
-        const athletes = [];
-        nameEls.forEach(el => athletes.push(el.innerText.trim()));
-        
-        // Fallback if no specific class found, try generic text parsing
-        if (athletes.length === 0) {
-           const potentialName = row.querySelector('strong, h3');
-           if (potentialName) athletes.push(potentialName.innerText.trim());
-        }
+          // Look for country code (3 letters) or country name
+          let countryCode = null;
+          let countryName = '';
+          let gold = 0, silver = 0, bronze = 0;
 
-        if (countryCode !== 'UNK') {
-            results.push({
-                id: `scraped-${index}`,
-                event: event,
-                medal: medal, // Will map to Enum string
+          cellTexts.forEach((text, idx) => {
+            // Check for 3-letter country code
+            if (/^[A-Z]{3}$/.test(text)) {
+              countryCode = text;
+            }
+
+            // Check for country names and map to codes
+            const countryMap = {
+              'Norway': 'NOR', 'Switzerland': 'SUI', 'Japan': 'JPN',
+              'Germany': 'GER', 'United States': 'USA', 'Austria': 'AUT',
+              'Italy': 'ITA', 'France': 'FRA', 'Canada': 'CAN',
+              'Sweden': 'SWE', 'Netherlands': 'NED', 'China': 'CHN',
+              'South Korea': 'KOR', 'Finland': 'FIN', 'Slovenia': 'SLO'
+            };
+
+            if (countryMap[text] && !countryCode) {
+              countryCode = countryMap[text];
+              countryName = text;
+            }
+
+            // Extract numbers (medal counts)
+            const num = parseInt(text);
+            if (!isNaN(num) && num >= 0) {
+              if (gold === 0 && num > 0) gold = num;
+              else if (silver === 0 && num > 0) silver = num;
+              else if (bronze === 0 && num > 0) bronze = num;
+            }
+          });
+
+          // If we found a country and medals
+          if (countryCode && (gold > 0 || silver > 0 || bronze > 0)) {
+            console.log(`Found: ${countryCode} - G:${gold} S:${silver} B:${bronze}`);
+
+            // Create individual medal entries
+            for (let i = 0; i < gold; i++) {
+              results.push({
+                id: `${countryCode.toLowerCase()}-gold-${i + 1}`,
+                event: 'Event',
+                medal: 'Gold',
                 countryCode: countryCode,
-                athletes: athletes
-            });
+                athletes: [`Athlete from ${countryCode}`]
+              });
+            }
+            for (let i = 0; i < silver; i++) {
+              results.push({
+                id: `${countryCode.toLowerCase()}-silver-${i + 1}`,
+                event: 'Event',
+                medal: 'Silver',
+                countryCode: countryCode,
+                athletes: [`Athlete from ${countryCode}`]
+              });
+            }
+            for (let i = 0; i < bronze; i++) {
+              results.push({
+                id: `${countryCode.toLowerCase()}-bronze-${i + 1}`,
+                event: 'Event',
+                medal: 'Bronze',
+                countryCode: countryCode,
+                athletes: [`Athlete from ${countryCode}`]
+              });
+            }
+          }
+        } catch (err) {
+          console.error('Error processing row:', err);
         }
       });
+
       return results;
     });
 
     console.log(`Found ${scrapedData.length} medal records.`);
 
-    // If no data found (e.g. before games), fallback to keep the file valid but empty 
-    // OR keep using mock data if you prefer. 
-    // Here we will write whatever we found.
-    
-    const fileContent = `
-import { MedalWin, MedalType } from '../types';
+    // If we got data, write it
+    if (scrapedData.length > 0) {
+      const fileContent = `import { MedalWin, MedalType } from '../types';
 
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
- * Scraped from: ${MEDALLISTS_URL}
+ * Scraped from: ${MEDAL_TABLE_URL}
  * Timestamp: ${new Date().toISOString()}
  */
 export const OLYMPIC_DATA: MedalWin[] = ${JSON.stringify(scrapedData, null, 2)};
 `;
 
-    // Ensure directory exists
-    const dir = path.dirname(OUTPUT_FILE);
-    if (!fs.existsSync(dir)){
-        fs.mkdirSync(dir, { recursive: true });
+      fs.writeFileSync(OUTPUT_FILE, fileContent);
+      console.log(`✅ Successfully wrote ${scrapedData.length} medals to ${OUTPUT_FILE}`);
+    } else {
+      console.log('⚠️  No medal data found. Check debug-espn-screenshot.png for details.');
+      console.log('Keeping existing data file.');
     }
 
-    fs.writeFileSync(OUTPUT_FILE, fileContent);
-    console.log(`Successfully wrote data to ${OUTPUT_FILE}`);
-
   } catch (error) {
-    console.error('Scraping failed:', error);
-    process.exit(1);
+    console.error('❌ Scraping failed:', error.message);
+    console.log('Keeping existing data file.');
   } finally {
     await browser.close();
   }
