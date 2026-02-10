@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-10T20:15:45.086Z
+ * Timestamp: 2026-02-10T21:17:12.115Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -73,6 +73,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "nor-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "NOR",
+    "athletes": [
+      "Athlete from NOR"
+    ]
+  },
+  {
     "id": "nor-bronze-1",
     "event": "Event",
     "medal": "Bronze",
@@ -114,7 +123,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "ITA",
     "athletes": [
-      "Elisa Confortola"
+      "Athlete from ITA"
     ]
   },
   {
@@ -208,6 +217,78 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "jpn-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-bronze-2",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-bronze-3",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-bronze-4",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
     "id": "usa-gold-1",
     "event": "Event",
     "medal": "Gold",
@@ -268,69 +349,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "USA",
     "athletes": [
       "Athlete from USA"
-    ]
-  },
-  {
-    "id": "jpn-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "JPN",
-    "athletes": [
-      "Kira Kimura"
-    ]
-  },
-  {
-    "id": "jpn-gold-2",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "JPN",
-    "athletes": [
-      "Kokomo Murase"
-    ]
-  },
-  {
-    "id": "jpn-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "JPN",
-    "athletes": [
-      "Athlete from JPN"
-    ]
-  },
-  {
-    "id": "jpn-silver-2",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "JPN",
-    "athletes": [
-      "Athlete from JPN"
-    ]
-  },
-  {
-    "id": "jpn-bronze-1",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "JPN",
-    "athletes": [
-      "Athlete from JPN"
-    ]
-  },
-  {
-    "id": "jpn-bronze-2",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "JPN",
-    "athletes": [
-      "Athlete from JPN"
-    ]
-  },
-  {
-    "id": "jpn-bronze-3",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "JPN",
-    "athletes": [
-      "Athlete from JPN"
     ]
   },
   {
@@ -586,12 +604,30 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "slo-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "SLO",
+    "athletes": [
+      "Nika Prevc"
+    ]
+  },
+  {
+    "id": "slo-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "SLO",
+    "athletes": [
+      "Nika Prevc"
+    ]
+  },
+  {
     "id": "ned-gold-1",
     "event": "Event",
     "medal": "Gold",
     "countryCode": "NED",
     "athletes": [
-      "Jutta Leerdam"
+      "Athlete from NED"
     ]
   },
   {
@@ -673,15 +709,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "CHN",
     "athletes": [
       "Athlete from CHN"
-    ]
-  },
-  {
-    "id": "slo-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "SLO",
-    "athletes": [
-      "Athlete from SLO"
     ]
   },
   {
