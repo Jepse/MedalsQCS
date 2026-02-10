@@ -2,244 +2,507 @@ import { MedalWin, MedalType } from '../types';
 
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
- * Scraped from: https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-10T02:57:53.594Z
+ * Scraped from: https://www.espn.com/olympics/winter/2026/medals
+ * Timestamp: 2026-02-10T03:03:43.556Z
  * 
- * Includes athlete names and country codes for regional attribution.
+ * Complete medal counts (gold, silver, bronze) for all countries.
+ * Note: Athlete names are generic placeholders. Regional attribution
+ * will work once we match real athlete names from a detailed source.
  */
 export const OLYMPIC_DATA: MedalWin[] = [
   {
-    "id": "medal-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "SUI",
-    "athletes": [
-      "Franjo von Allmen"
-    ]
-  },
-  {
-    "id": "medal-2",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "SUI",
-    "athletes": [
-      "Franjo von Allmen"
-    ]
-  },
-  {
-    "id": "medal-3",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "USA",
-    "athletes": [
-      "Danny O'Shea"
-    ]
-  },
-  {
-    "id": "medal-4",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "USA",
-    "athletes": [
-      "Ellie Kam"
-    ]
-  },
-  {
-    "id": "medal-5",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "USA",
-    "athletes": [
-      "Ilia Malinin"
-    ]
-  },
-  {
-    "id": "medal-6",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "USA",
-    "athletes": [
-      "Amber Glenn"
-    ]
-  },
-  {
-    "id": "medal-7",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "USA",
-    "athletes": [
-      "Alysa Liu"
-    ]
-  },
-  {
-    "id": "medal-8",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "USA",
-    "athletes": [
-      "Breezy Johnson"
-    ]
-  },
-  {
-    "id": "medal-9",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "USA",
-    "athletes": [
-      "Madison Chock"
-    ]
-  },
-  {
-    "id": "medal-10",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "USA",
-    "athletes": [
-      "Evan Bates"
-    ]
-  },
-  {
-    "id": "medal-11",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "SUI",
-    "athletes": [
-      "Tanguy Nef"
-    ]
-  },
-  {
-    "id": "medal-12",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "SUI",
-    "athletes": [
-      "Mathilde Gremaud"
-    ]
-  },
-  {
-    "id": "medal-13",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "SWE",
-    "athletes": [
-      "Frida Karlsson"
-    ]
-  },
-  {
-    "id": "medal-14",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "NOR",
-    "athletes": [
-      "Sander Eitrem"
-    ]
-  },
-  {
-    "id": "medal-15",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "NOR",
-    "athletes": [
-      "Anna Odine Stroem"
-    ]
-  },
-  {
-    "id": "medal-16",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "NOR",
-    "athletes": [
-      "Johannes Høsflot Klæbo"
-    ]
-  },
-  {
-    "id": "medal-17",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "NED",
-    "athletes": [
-      "Jutta Leerdam"
-    ]
-  },
-  {
-    "id": "medal-18",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "JPN",
-    "athletes": [
-      "Kira Kimura"
-    ]
-  },
-  {
-    "id": "medal-19",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "JPN",
-    "athletes": [
-      "Kokomo Murase"
-    ]
-  },
-  {
-    "id": "medal-20",
+    "id": "ita-gold-1",
     "event": "Event",
     "medal": "Gold",
     "countryCode": "ITA",
     "athletes": [
-      "Francesca Lollobrigida"
+      "Athlete from ITA"
     ]
   },
   {
-    "id": "medal-21",
+    "id": "ita-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "ITA",
+    "athletes": [
+      "Athlete from ITA"
+    ]
+  },
+  {
+    "id": "ita-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "ITA",
+    "athletes": [
+      "Athlete from ITA"
+    ]
+  },
+  {
+    "id": "ita-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "ITA",
+    "athletes": [
+      "Athlete from ITA"
+    ]
+  },
+  {
+    "id": "ita-bronze-2",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "ITA",
+    "athletes": [
+      "Athlete from ITA"
+    ]
+  },
+  {
+    "id": "ita-bronze-3",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "ITA",
+    "athletes": [
+      "Athlete from ITA"
+    ]
+  },
+  {
+    "id": "ita-bronze-4",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "ITA",
+    "athletes": [
+      "Athlete from ITA"
+    ]
+  },
+  {
+    "id": "ita-bronze-5",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "ITA",
+    "athletes": [
+      "Athlete from ITA"
+    ]
+  },
+  {
+    "id": "ita-bronze-6",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "ITA",
+    "athletes": [
+      "Athlete from ITA"
+    ]
+  },
+  {
+    "id": "jpn-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-bronze-2",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-bronze-3",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "nor-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "NOR",
+    "athletes": [
+      "Athlete from NOR"
+    ]
+  },
+  {
+    "id": "nor-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "NOR",
+    "athletes": [
+      "Athlete from NOR"
+    ]
+  },
+  {
+    "id": "nor-gold-3",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "NOR",
+    "athletes": [
+      "Athlete from NOR"
+    ]
+  },
+  {
+    "id": "nor-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "NOR",
+    "athletes": [
+      "Athlete from NOR"
+    ]
+  },
+  {
+    "id": "nor-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "NOR",
+    "athletes": [
+      "Athlete from NOR"
+    ]
+  },
+  {
+    "id": "nor-bronze-2",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "NOR",
+    "athletes": [
+      "Athlete from NOR"
+    ]
+  },
+  {
+    "id": "sui-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "SUI",
+    "athletes": [
+      "Athlete from SUI"
+    ]
+  },
+  {
+    "id": "sui-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "SUI",
+    "athletes": [
+      "Athlete from SUI"
+    ]
+  },
+  {
+    "id": "sui-gold-3",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "SUI",
+    "athletes": [
+      "Athlete from SUI"
+    ]
+  },
+  {
+    "id": "sui-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "SUI",
+    "athletes": [
+      "Athlete from SUI"
+    ]
+  },
+  {
+    "id": "sui-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "SUI",
+    "athletes": [
+      "Athlete from SUI"
+    ]
+  },
+  {
+    "id": "ger-gold-1",
     "event": "Event",
     "medal": "Gold",
     "countryCode": "GER",
     "athletes": [
-      "Philipp Raimund"
+      "Athlete from GER"
     ]
   },
   {
-    "id": "medal-22",
+    "id": "ger-gold-2",
     "event": "Event",
     "medal": "Gold",
     "countryCode": "GER",
     "athletes": [
-      "Max Langenhan"
+      "Athlete from GER"
     ]
   },
   {
-    "id": "medal-23",
+    "id": "ger-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "GER",
+    "athletes": [
+      "Athlete from GER"
+    ]
+  },
+  {
+    "id": "ger-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "GER",
+    "athletes": [
+      "Athlete from GER"
+    ]
+  },
+  {
+    "id": "aut-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
+    "id": "aut-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
+    "id": "aut-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
+    "id": "aut-silver-3",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
+    "id": "usa-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "USA",
+    "athletes": [
+      "Athlete from USA"
+    ]
+  },
+  {
+    "id": "usa-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "USA",
+    "athletes": [
+      "Athlete from USA"
+    ]
+  },
+  {
+    "id": "swe-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "SWE",
+    "athletes": [
+      "Athlete from SWE"
+    ]
+  },
+  {
+    "id": "swe-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "SWE",
+    "athletes": [
+      "Athlete from SWE"
+    ]
+  },
+  {
+    "id": "ned-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "NED",
+    "athletes": [
+      "Athlete from NED"
+    ]
+  },
+  {
+    "id": "ned-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "NED",
+    "athletes": [
+      "Athlete from NED"
+    ]
+  },
+  {
+    "id": "fra-gold-1",
     "event": "Event",
     "medal": "Gold",
     "countryCode": "FRA",
     "athletes": [
-      "Lou Jeanmonnot"
+      "Athlete from FRA"
     ]
   },
   {
-    "id": "medal-24",
+    "id": "fra-silver-1",
     "event": "Event",
-    "medal": "Gold",
+    "medal": "Silver",
     "countryCode": "FRA",
     "athletes": [
-      "Julia Simon"
+      "Athlete from FRA"
     ]
   },
   {
-    "id": "medal-25",
+    "id": "cze-gold-1",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "FRA",
+    "countryCode": "CZE",
     "athletes": [
-      "Eric Perrot"
+      "Athlete from CZE"
     ]
   },
   {
-    "id": "medal-26",
+    "id": "cze-silver-1",
     "event": "Event",
-    "medal": "Gold",
-    "countryCode": "FRA",
+    "medal": "Silver",
+    "countryCode": "CZE",
     "athletes": [
-      "Quentin Fillon Maillet"
+      "Athlete from CZE"
+    ]
+  },
+  {
+    "id": "kor-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "KOR",
+    "athletes": [
+      "Athlete from KOR"
+    ]
+  },
+  {
+    "id": "kor-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "KOR",
+    "athletes": [
+      "Athlete from KOR"
+    ]
+  },
+  {
+    "id": "chn-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "CHN",
+    "athletes": [
+      "Athlete from CHN"
+    ]
+  },
+  {
+    "id": "chn-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "CHN",
+    "athletes": [
+      "Athlete from CHN"
+    ]
+  },
+  {
+    "id": "can-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "CAN",
+    "athletes": [
+      "Athlete from CAN"
+    ]
+  },
+  {
+    "id": "can-bronze-2",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "CAN",
+    "athletes": [
+      "Athlete from CAN"
+    ]
+  },
+  {
+    "id": "slo-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "SLO",
+    "athletes": [
+      "Athlete from SLO"
+    ]
+  },
+  {
+    "id": "pol-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "POL",
+    "athletes": [
+      "Athlete from POL"
+    ]
+  },
+  {
+    "id": "nzl-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "NZL",
+    "athletes": [
+      "Athlete from NZL"
+    ]
+  },
+  {
+    "id": "bul-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "BUL",
+    "athletes": [
+      "Athlete from BUL"
     ]
   }
 ];
