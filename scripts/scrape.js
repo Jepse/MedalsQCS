@@ -29,14 +29,19 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
     await page.goto(MEDAL_TABLE_URL, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await page.waitForTimeout(10000);
 
+    // Scroll down to ensure all countries are loaded
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    await page.waitForTimeout(2000);
+
     const countryMedals = await page.evaluate(() => {
       const results = new Map();
       const tables = document.querySelectorAll('table');
 
       tables.forEach((table) => {
         const rows = table.querySelectorAll('tbody tr');
+        console.log(`Processing table with ${rows.length} rows`);
 
-        rows.forEach((row) => {
+        rows.forEach((row, rowIdx) => {
           const cells = row.querySelectorAll('td');
           if (cells.length < 5) return;
 
@@ -54,7 +59,8 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
                 'DE': 'GER', 'FR': 'FRA', 'IT': 'ITA', 'JP': 'JPN',
                 'NO': 'NOR', 'SE': 'SWE', 'AT': 'AUT', 'NL': 'NED',
                 'CN': 'CHN', 'KR': 'KOR', 'FI': 'FIN', 'SI': 'SLO',
-                'ES': 'ESP', 'AU': 'AUS', 'CZ': 'CZE'
+                'ES': 'ESP', 'AU': 'AUS', 'CZ': 'CZE', 'NZ': 'NZL',
+                'PL': 'POL', 'BG': 'BUL'
               };
               if (map[countryCode]) countryCode = map[countryCode];
             }
@@ -69,6 +75,7 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
           const bronze = parseInt(bronzeText) || 0;
 
           if (countryCode && (gold > 0 || silver > 0 || bronze > 0)) {
+            console.log(`Row ${rowIdx}: ${countryCode} - G:${gold} S:${silver} B:${bronze}`);
             results.set(countryCode, { gold, silver, bronze });
           }
         });
@@ -78,11 +85,16 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
     });
 
     console.log(`Found ${countryMedals.length} countries with medals`);
+    countryMedals.forEach(c => console.log(`  ${c.countryCode}: G${c.gold} S${c.silver} B${c.bronze}`));
 
     // STEP 2: Get athlete names from athletes page
-    console.log('Step 2: Getting athlete names...');
+    console.log('\nStep 2: Getting athlete names...');
     await page.goto(ATHLETES_URL, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await page.waitForTimeout(12000);
+
+    // Scroll to load more athletes
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    await page.waitForTimeout(2000);
 
     const athleteData = await page.evaluate(() => {
       const results = [];
@@ -141,7 +153,6 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
 
     // STEP 3: Create medal records using country totals and athlete names where available
     const scrapedData = [];
-    let medalId = 1;
 
     // Create a pool of athlete names by country
     const athletesByCountry = {};
@@ -149,7 +160,6 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
       if (!athletesByCountry[athlete.countryCode]) {
         athletesByCountry[athlete.countryCode] = [];
       }
-      // Add athlete name multiple times based on their medal count
       for (let i = 0; i < athlete.gold; i++) {
         athletesByCountry[athlete.countryCode].push({ name: athlete.athleteName, type: 'Gold' });
       }
@@ -170,7 +180,7 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
         const athleteEntry = athletes.find(a => a.type === 'Gold');
         const athleteName = athleteEntry ? athleteEntry.name : `Athlete from ${country.countryCode}`;
         if (athleteEntry) {
-          athletes.splice(athletes.indexOf(athleteEntry), 1); // Remove used athlete
+          athletes.splice(athletes.indexOf(athleteEntry), 1);
         }
 
         scrapedData.push({
