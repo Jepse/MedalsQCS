@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-10T21:17:12.115Z
+ * Timestamp: 2026-02-10T22:15:12.838Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -33,7 +33,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "NOR",
     "athletes": [
-      "Sander Eitrem"
+      "Anna Odine Stroem"
     ]
   },
   {
@@ -42,7 +42,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "NOR",
     "athletes": [
-      "Anna Odine Stroem"
+      "Athlete from NOR"
     ]
   },
   {
@@ -51,7 +51,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "NOR",
     "athletes": [
-      "Birk Ruud"
+      "Athlete from NOR"
     ]
   },
   {
@@ -69,7 +69,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Silver",
     "countryCode": "NOR",
     "athletes": [
-      "Athlete from NOR"
+      "Anna Odine Stroem"
     ]
   },
   {
@@ -258,7 +258,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Bronze",
     "countryCode": "JPN",
     "athletes": [
-      "Athlete from JPN"
+      "Ren Nikaido"
     ]
   },
   {
@@ -267,7 +267,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Bronze",
     "countryCode": "JPN",
     "athletes": [
-      "Athlete from JPN"
+      "Ren Nikaido"
     ]
   },
   {
@@ -276,7 +276,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Bronze",
     "countryCode": "JPN",
     "athletes": [
-      "Athlete from JPN"
+      "Nozomi Maruyama"
     ]
   },
   {
@@ -285,7 +285,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Bronze",
     "countryCode": "JPN",
     "athletes": [
-      "Athlete from JPN"
+      "Nozomi Maruyama"
     ]
   },
   {
