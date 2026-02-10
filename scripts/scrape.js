@@ -39,9 +39,8 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
 
       tables.forEach((table) => {
         const rows = table.querySelectorAll('tbody tr');
-        console.log(`Processing table with ${rows.length} rows`);
 
-        rows.forEach((row, rowIdx) => {
+        rows.forEach((row) => {
           const cells = row.querySelectorAll('td');
           if (cells.length < 5) return;
 
@@ -75,7 +74,6 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
           const bronze = parseInt(bronzeText) || 0;
 
           if (countryCode && (gold > 0 || silver > 0 || bronze > 0)) {
-            console.log(`Row ${rowIdx}: ${countryCode} - G:${gold} S:${silver} B:${bronze}`);
             results.set(countryCode, { gold, silver, bronze });
           }
         });
@@ -85,16 +83,18 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
     });
 
     console.log(`Found ${countryMedals.length} countries with medals`);
-    countryMedals.forEach(c => console.log(`  ${c.countryCode}: G${c.gold} S${c.silver} B${c.bronze}`));
 
     // STEP 2: Get athlete names from athletes page
     console.log('\nStep 2: Getting athlete names...');
     await page.goto(ATHLETES_URL, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await page.waitForTimeout(12000);
 
-    // Scroll to load more athletes
-    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-    await page.waitForTimeout(2000);
+    // Scroll multiple times to load ALL athletes (including those with only bronze)
+    console.log('Scrolling to load all athletes...');
+    for (let i = 0; i < 5; i++) {
+      await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+      await page.waitForTimeout(2000);
+    }
 
     const athleteData = await page.evaluate(() => {
       const results = [];
@@ -102,8 +102,9 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
 
       tables.forEach((table) => {
         const rows = table.querySelectorAll('tbody tr');
+        console.log(`Found ${rows.length} athlete rows`);
 
-        rows.forEach((row) => {
+        rows.forEach((row, idx) => {
           const cells = row.querySelectorAll('td');
           if (cells.length < 5) return;
 
@@ -141,6 +142,10 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
           const bronze = parseInt(bronzeText) || 0;
 
           if ((gold > 0 || silver > 0 || bronze > 0) && athleteName && countryCode) {
+            // Log Canadian athletes specifically
+            if (countryCode === 'CAN') {
+              console.log(`Found Canadian athlete: ${athleteName} - G:${gold} S:${silver} B:${bronze}`);
+            }
             results.push({ athleteName, countryCode, gold, silver, bronze });
           }
         });
@@ -150,6 +155,9 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
     });
 
     console.log(`Found ${athleteData.length} athletes with names`);
+    const canadianAthletes = athleteData.filter(a => a.countryCode === 'CAN');
+    console.log(`Canadian athletes found: ${canadianAthletes.length}`);
+    canadianAthletes.forEach(a => console.log(`  ${a.athleteName}: G${a.gold} S${a.silver} B${a.bronze}`));
 
     // STEP 3: Create medal records using country totals and athlete names where available
     const scrapedData = [];
@@ -233,7 +241,10 @@ const OUTPUT_FILE = path.join(__dirname, '../data/currentData.ts');
     console.log(`Bronze: ${scrapedData.filter(m => m.medal === 'Bronze').length}`);
 
     const withRealNames = scrapedData.filter(m => !m.athletes[0].startsWith('Athlete from')).length;
+    const canadianMedals = scrapedData.filter(m => m.countryCode === 'CAN');
     console.log(`Medals with real athlete names: ${withRealNames}`);
+    console.log(`Canadian medals: ${canadianMedals.length}`);
+    canadianMedals.forEach(m => console.log(`  ${m.medal}: ${m.athletes[0]}`));
 
     if (scrapedData.length > 0) {
       const fileContent = `import { MedalWin, MedalType } from '../types';
