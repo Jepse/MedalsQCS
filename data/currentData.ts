@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-11T21:13:56.915Z
+ * Timestamp: 2026-02-11T22:08:53.322Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -325,6 +325,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "usa-silver-6",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "USA",
+    "athletes": [
+      "Athlete from USA"
+    ]
+  },
+  {
     "id": "usa-bronze-1",
     "event": "Event",
     "medal": "Bronze",
@@ -622,6 +631,69 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "fra-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "FRA",
+    "athletes": [
+      "Julia Simon"
+    ]
+  },
+  {
+    "id": "fra-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "FRA",
+    "athletes": [
+      "Julia Simon"
+    ]
+  },
+  {
+    "id": "fra-gold-3",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "FRA",
+    "athletes": [
+      "Lou Jeanmonnot"
+    ]
+  },
+  {
+    "id": "fra-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "FRA",
+    "athletes": [
+      "Lou Jeanmonnot"
+    ]
+  },
+  {
+    "id": "fra-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "FRA",
+    "athletes": [
+      "Eric Perrot"
+    ]
+  },
+  {
+    "id": "fra-silver-3",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "FRA",
+    "athletes": [
+      "Athlete from FRA"
+    ]
+  },
+  {
+    "id": "fra-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "FRA",
+    "athletes": [
+      "Athlete from FRA"
+    ]
+  },
+  {
     "id": "swe-gold-1",
     "event": "Event",
     "medal": "Gold",
@@ -676,57 +748,39 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
-    "id": "fra-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "FRA",
-    "athletes": [
-      "Julia Simon"
-    ]
-  },
-  {
-    "id": "fra-gold-2",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "FRA",
-    "athletes": [
-      "Julia Simon"
-    ]
-  },
-  {
-    "id": "fra-silver-1",
+    "id": "can-silver-1",
     "event": "Event",
     "medal": "Silver",
-    "countryCode": "FRA",
+    "countryCode": "CAN",
     "athletes": [
-      "Lou Jeanmonnot"
+      "Athlete from CAN"
     ]
   },
   {
-    "id": "fra-silver-2",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "FRA",
-    "athletes": [
-      "Eric Perrot"
-    ]
-  },
-  {
-    "id": "fra-silver-3",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "FRA",
-    "athletes": [
-      "Athlete from FRA"
-    ]
-  },
-  {
-    "id": "fra-bronze-1",
+    "id": "can-bronze-1",
     "event": "Event",
     "medal": "Bronze",
-    "countryCode": "FRA",
+    "countryCode": "CAN",
     "athletes": [
-      "Athlete from FRA"
+      "Athlete from CAN"
+    ]
+  },
+  {
+    "id": "can-bronze-2",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "CAN",
+    "athletes": [
+      "Athlete from CAN"
+    ]
+  },
+  {
+    "id": "can-bronze-3",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "CAN",
+    "athletes": [
+      "Athlete from CAN"
     ]
   },
   {
@@ -781,33 +835,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "CHN",
     "athletes": [
       "Athlete from CHN"
-    ]
-  },
-  {
-    "id": "can-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "CAN",
-    "athletes": [
-      "Athlete from CAN"
-    ]
-  },
-  {
-    "id": "can-bronze-1",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "CAN",
-    "athletes": [
-      "Athlete from CAN"
-    ]
-  },
-  {
-    "id": "can-bronze-2",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "CAN",
-    "athletes": [
-      "Athlete from CAN"
     ]
   },
   {
