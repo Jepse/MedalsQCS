@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-11T19:25:03.510Z
+ * Timestamp: 2026-02-11T20:12:33.232Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -146,6 +146,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
   },
   {
     "id": "ita-gold-3",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "ITA",
+    "athletes": [
+      "Athlete from ITA"
+    ]
+  },
+  {
+    "id": "ita-gold-4",
     "event": "Event",
     "medal": "Gold",
     "countryCode": "ITA",
@@ -334,6 +343,150 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "ger-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "GER",
+    "athletes": [
+      "Athlete from GER"
+    ]
+  },
+  {
+    "id": "ger-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "GER",
+    "athletes": [
+      "Athlete from GER"
+    ]
+  },
+  {
+    "id": "ger-gold-3",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "GER",
+    "athletes": [
+      "Athlete from GER"
+    ]
+  },
+  {
+    "id": "ger-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "GER",
+    "athletes": [
+      "Emma Aicher"
+    ]
+  },
+  {
+    "id": "ger-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "GER",
+    "athletes": [
+      "Emma Aicher"
+    ]
+  },
+  {
+    "id": "ger-silver-3",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "GER",
+    "athletes": [
+      "Athlete from GER"
+    ]
+  },
+  {
+    "id": "ger-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "GER",
+    "athletes": [
+      "Athlete from GER"
+    ]
+  },
+  {
+    "id": "ger-bronze-2",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "GER",
+    "athletes": [
+      "Athlete from GER"
+    ]
+  },
+  {
+    "id": "aut-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
+    "id": "aut-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
+    "id": "aut-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
+    "id": "aut-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
+    "id": "aut-silver-3",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
+    "id": "aut-silver-4",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
+    "id": "aut-silver-5",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
+    "id": "aut-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
     "id": "jpn-gold-1",
     "event": "Event",
     "medal": "Gold",
@@ -466,132 +619,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "SUI",
     "athletes": [
       "Athlete from SUI"
-    ]
-  },
-  {
-    "id": "ger-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "GER",
-    "athletes": [
-      "Athlete from GER"
-    ]
-  },
-  {
-    "id": "ger-gold-2",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "GER",
-    "athletes": [
-      "Athlete from GER"
-    ]
-  },
-  {
-    "id": "ger-gold-3",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "GER",
-    "athletes": [
-      "Athlete from GER"
-    ]
-  },
-  {
-    "id": "ger-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "GER",
-    "athletes": [
-      "Emma Aicher"
-    ]
-  },
-  {
-    "id": "ger-silver-2",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "GER",
-    "athletes": [
-      "Emma Aicher"
-    ]
-  },
-  {
-    "id": "ger-silver-3",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "GER",
-    "athletes": [
-      "Athlete from GER"
-    ]
-  },
-  {
-    "id": "ger-bronze-1",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "GER",
-    "athletes": [
-      "Athlete from GER"
-    ]
-  },
-  {
-    "id": "aut-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "AUT",
-    "athletes": [
-      "Athlete from AUT"
-    ]
-  },
-  {
-    "id": "aut-gold-2",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "AUT",
-    "athletes": [
-      "Athlete from AUT"
-    ]
-  },
-  {
-    "id": "aut-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "AUT",
-    "athletes": [
-      "Athlete from AUT"
-    ]
-  },
-  {
-    "id": "aut-silver-2",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "AUT",
-    "athletes": [
-      "Athlete from AUT"
-    ]
-  },
-  {
-    "id": "aut-silver-3",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "AUT",
-    "athletes": [
-      "Athlete from AUT"
-    ]
-  },
-  {
-    "id": "aut-silver-4",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "AUT",
-    "athletes": [
-      "Athlete from AUT"
-    ]
-  },
-  {
-    "id": "aut-bronze-1",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "AUT",
-    "athletes": [
-      "Athlete from AUT"
     ]
   },
   {
