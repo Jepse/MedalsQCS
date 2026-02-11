@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-11T12:16:34.215Z
+ * Timestamp: 2026-02-11T13:32:21.246Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -217,6 +217,78 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "usa-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "USA",
+    "athletes": [
+      "Danny O'Shea"
+    ]
+  },
+  {
+    "id": "usa-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "USA",
+    "athletes": [
+      "Ellie Kam"
+    ]
+  },
+  {
+    "id": "usa-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "USA",
+    "athletes": [
+      "Athlete from USA"
+    ]
+  },
+  {
+    "id": "usa-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "USA",
+    "athletes": [
+      "Athlete from USA"
+    ]
+  },
+  {
+    "id": "usa-silver-3",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "USA",
+    "athletes": [
+      "Athlete from USA"
+    ]
+  },
+  {
+    "id": "usa-silver-4",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "USA",
+    "athletes": [
+      "Athlete from USA"
+    ]
+  },
+  {
+    "id": "usa-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "USA",
+    "athletes": [
+      "Athlete from USA"
+    ]
+  },
+  {
+    "id": "usa-bronze-2",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "USA",
+    "athletes": [
+      "Athlete from USA"
+    ]
+  },
+  {
     "id": "jpn-gold-1",
     "event": "Event",
     "medal": "Gold",
@@ -289,66 +361,66 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
-    "id": "usa-gold-1",
+    "id": "sui-gold-1",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "USA",
+    "countryCode": "SUI",
     "athletes": [
-      "Danny O'Shea"
+      "Franjo von Allmen"
     ]
   },
   {
-    "id": "usa-gold-2",
+    "id": "sui-gold-2",
     "event": "Event",
     "medal": "Gold",
-    "countryCode": "USA",
+    "countryCode": "SUI",
     "athletes": [
-      "Ellie Kam"
+      "Franjo von Allmen"
     ]
   },
   {
-    "id": "usa-silver-1",
+    "id": "sui-gold-3",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "SUI",
+    "athletes": [
+      "Franjo von Allmen"
+    ]
+  },
+  {
+    "id": "sui-gold-4",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "SUI",
+    "athletes": [
+      "Tanguy Nef"
+    ]
+  },
+  {
+    "id": "sui-silver-1",
     "event": "Event",
     "medal": "Silver",
-    "countryCode": "USA",
+    "countryCode": "SUI",
     "athletes": [
-      "Athlete from USA"
+      "Marco Odermatt"
     ]
   },
   {
-    "id": "usa-silver-2",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "USA",
-    "athletes": [
-      "Athlete from USA"
-    ]
-  },
-  {
-    "id": "usa-silver-3",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "USA",
-    "athletes": [
-      "Athlete from USA"
-    ]
-  },
-  {
-    "id": "usa-bronze-1",
+    "id": "sui-bronze-1",
     "event": "Event",
     "medal": "Bronze",
-    "countryCode": "USA",
+    "countryCode": "SUI",
     "athletes": [
-      "Athlete from USA"
+      "Marco Odermatt"
     ]
   },
   {
-    "id": "usa-bronze-2",
+    "id": "sui-bronze-2",
     "event": "Event",
     "medal": "Bronze",
-    "countryCode": "USA",
+    "countryCode": "SUI",
     "athletes": [
-      "Athlete from USA"
+      "Athlete from SUI"
     ]
   },
   {
@@ -457,51 +529,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "GER",
     "athletes": [
       "Athlete from GER"
-    ]
-  },
-  {
-    "id": "sui-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "SUI",
-    "athletes": [
-      "Franjo von Allmen"
-    ]
-  },
-  {
-    "id": "sui-gold-2",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "SUI",
-    "athletes": [
-      "Franjo von Allmen"
-    ]
-  },
-  {
-    "id": "sui-gold-3",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "SUI",
-    "athletes": [
-      "Tanguy Nef"
-    ]
-  },
-  {
-    "id": "sui-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "SUI",
-    "athletes": [
-      "Athlete from SUI"
-    ]
-  },
-  {
-    "id": "sui-bronze-1",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "SUI",
-    "athletes": [
-      "Athlete from SUI"
     ]
   },
   {
