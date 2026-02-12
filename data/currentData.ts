@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-12T16:21:11.545Z
+ * Timestamp: 2026-02-12T17:24:25.091Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -15,7 +15,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "ITA",
     "athletes": [
-      "Athlete from ITA"
+      "Francesca Lollobrigida"
     ]
   },
   {
@@ -47,6 +47,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
   },
   {
     "id": "ita-gold-5",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "ITA",
+    "athletes": [
+      "Athlete from ITA"
+    ]
+  },
+  {
+    "id": "ita-gold-6",
     "event": "Event",
     "medal": "Gold",
     "countryCode": "ITA",
@@ -213,7 +222,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Silver",
     "countryCode": "NOR",
     "athletes": [
-      "Athlete from NOR"
+      "Ragne Wiklund"
     ]
   },
   {
@@ -222,7 +231,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Bronze",
     "countryCode": "NOR",
     "athletes": [
-      "Athlete from NOR"
+      "Ragne Wiklund"
     ]
   },
   {
@@ -245,6 +254,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
   },
   {
     "id": "nor-bronze-4",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "NOR",
+    "athletes": [
+      "Athlete from NOR"
+    ]
+  },
+  {
+    "id": "nor-bronze-5",
     "event": "Event",
     "medal": "Bronze",
     "countryCode": "NOR",
@@ -798,7 +816,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "SUI",
     "athletes": [
-      "Tanguy Nef"
+      "Athlete from SUI"
     ]
   },
   {
@@ -902,6 +920,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
   },
   {
     "id": "ned-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "NED",
+    "athletes": [
+      "Athlete from NED"
+    ]
+  },
+  {
+    "id": "ned-silver-3",
     "event": "Event",
     "medal": "Silver",
     "countryCode": "NED",
