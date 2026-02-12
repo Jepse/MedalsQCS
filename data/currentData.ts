@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-12T14:22:38.755Z
+ * Timestamp: 2026-02-12T15:19:09.701Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -388,6 +388,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "aut-gold-3",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
     "id": "aut-silver-1",
     "event": "Event",
     "medal": "Silver",
@@ -443,6 +452,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
   },
   {
     "id": "aut-bronze-2",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "AUT",
+    "athletes": [
+      "Athlete from AUT"
+    ]
+  },
+  {
+    "id": "aut-bronze-3",
     "event": "Event",
     "medal": "Bronze",
     "countryCode": "AUT",
@@ -821,6 +839,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
   },
   {
     "id": "can-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "CAN",
+    "athletes": [
+      "Athlete from CAN"
+    ]
+  },
+  {
+    "id": "can-silver-3",
     "event": "Event",
     "medal": "Silver",
     "countryCode": "CAN",
