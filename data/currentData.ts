@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-12T13:32:26.681Z
+ * Timestamp: 2026-02-12T14:22:38.755Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -361,6 +361,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "usa-bronze-3",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "USA",
+    "athletes": [
+      "Athlete from USA"
+    ]
+  },
+  {
     "id": "aut-gold-1",
     "event": "Event",
     "medal": "Gold",
@@ -520,6 +529,78 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "JPN",
     "athletes": [
       "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "swe-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "SWE",
+    "athletes": [
+      "Frida Karlsson"
+    ]
+  },
+  {
+    "id": "swe-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "SWE",
+    "athletes": [
+      "Frida Karlsson"
+    ]
+  },
+  {
+    "id": "swe-gold-3",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "SWE",
+    "athletes": [
+      "Athlete from SWE"
+    ]
+  },
+  {
+    "id": "swe-gold-4",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "SWE",
+    "athletes": [
+      "Athlete from SWE"
+    ]
+  },
+  {
+    "id": "swe-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "SWE",
+    "athletes": [
+      "Ebba Andersson"
+    ]
+  },
+  {
+    "id": "swe-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "SWE",
+    "athletes": [
+      "Ebba Andersson"
+    ]
+  },
+  {
+    "id": "swe-silver-3",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "SWE",
+    "athletes": [
+      "Athlete from SWE"
+    ]
+  },
+  {
+    "id": "swe-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "SWE",
+    "athletes": [
+      "Athlete from SWE"
     ]
   },
   {
@@ -727,60 +808,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "SUI",
     "athletes": [
       "Athlete from SUI"
-    ]
-  },
-  {
-    "id": "swe-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "SWE",
-    "athletes": [
-      "Rasmus Wranaa"
-    ]
-  },
-  {
-    "id": "swe-gold-2",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "SWE",
-    "athletes": [
-      "Isabella Wranaa"
-    ]
-  },
-  {
-    "id": "swe-gold-3",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "SWE",
-    "athletes": [
-      "Athlete from SWE"
-    ]
-  },
-  {
-    "id": "swe-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "SWE",
-    "athletes": [
-      "Athlete from SWE"
-    ]
-  },
-  {
-    "id": "swe-silver-2",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "SWE",
-    "athletes": [
-      "Athlete from SWE"
-    ]
-  },
-  {
-    "id": "swe-bronze-1",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "SWE",
-    "athletes": [
-      "Athlete from SWE"
     ]
   },
   {
