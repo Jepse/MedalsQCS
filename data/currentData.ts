@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-13T20:11:31.707Z
+ * Timestamp: 2026-02-13T21:12:41.344Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -568,6 +568,213 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "jpn-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-gold-3",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-bronze-2",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-bronze-3",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-bronze-4",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-bronze-5",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-bronze-6",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "jpn-bronze-7",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "JPN",
+    "athletes": [
+      "Athlete from JPN"
+    ]
+  },
+  {
+    "id": "ger-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "GER",
+    "athletes": [
+      "Max Langenhan"
+    ]
+  },
+  {
+    "id": "ger-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "GER",
+    "athletes": [
+      "Max Langenhan"
+    ]
+  },
+  {
+    "id": "ger-gold-3",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "GER",
+    "athletes": [
+      "Julia Taubitz"
+    ]
+  },
+  {
+    "id": "ger-gold-4",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "GER",
+    "athletes": [
+      "Julia Taubitz"
+    ]
+  },
+  {
+    "id": "ger-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "GER",
+    "athletes": [
+      "Magdalena Matschina"
+    ]
+  },
+  {
+    "id": "ger-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "GER",
+    "athletes": [
+      "Dajana Eitberger"
+    ]
+  },
+  {
+    "id": "ger-silver-3",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "GER",
+    "athletes": [
+      "Athlete from GER"
+    ]
+  },
+  {
+    "id": "ger-silver-4",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "GER",
+    "athletes": [
+      "Athlete from GER"
+    ]
+  },
+  {
+    "id": "ger-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "GER",
+    "athletes": [
+      "Tobias Arlt"
+    ]
+  },
+  {
+    "id": "ger-bronze-2",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "GER",
+    "athletes": [
+      "Tobias Wendl"
+    ]
+  },
+  {
+    "id": "ger-bronze-3",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "GER",
+    "athletes": [
+      "Athlete from GER"
+    ]
+  },
+  {
     "id": "fra-gold-1",
     "event": "Event",
     "medal": "Gold",
@@ -655,177 +862,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "FRA",
     "athletes": [
       "Athlete from FRA"
-    ]
-  },
-  {
-    "id": "jpn-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "JPN",
-    "athletes": [
-      "Athlete from JPN"
-    ]
-  },
-  {
-    "id": "jpn-gold-2",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "JPN",
-    "athletes": [
-      "Athlete from JPN"
-    ]
-  },
-  {
-    "id": "jpn-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "JPN",
-    "athletes": [
-      "Athlete from JPN"
-    ]
-  },
-  {
-    "id": "jpn-silver-2",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "JPN",
-    "athletes": [
-      "Athlete from JPN"
-    ]
-  },
-  {
-    "id": "jpn-bronze-1",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "JPN",
-    "athletes": [
-      "Athlete from JPN"
-    ]
-  },
-  {
-    "id": "jpn-bronze-2",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "JPN",
-    "athletes": [
-      "Athlete from JPN"
-    ]
-  },
-  {
-    "id": "jpn-bronze-3",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "JPN",
-    "athletes": [
-      "Athlete from JPN"
-    ]
-  },
-  {
-    "id": "jpn-bronze-4",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "JPN",
-    "athletes": [
-      "Athlete from JPN"
-    ]
-  },
-  {
-    "id": "jpn-bronze-5",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "JPN",
-    "athletes": [
-      "Athlete from JPN"
-    ]
-  },
-  {
-    "id": "jpn-bronze-6",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "JPN",
-    "athletes": [
-      "Athlete from JPN"
-    ]
-  },
-  {
-    "id": "ger-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "GER",
-    "athletes": [
-      "Max Langenhan"
-    ]
-  },
-  {
-    "id": "ger-gold-2",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "GER",
-    "athletes": [
-      "Max Langenhan"
-    ]
-  },
-  {
-    "id": "ger-gold-3",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "GER",
-    "athletes": [
-      "Julia Taubitz"
-    ]
-  },
-  {
-    "id": "ger-gold-4",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "GER",
-    "athletes": [
-      "Julia Taubitz"
-    ]
-  },
-  {
-    "id": "ger-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "GER",
-    "athletes": [
-      "Magdalena Matschina"
-    ]
-  },
-  {
-    "id": "ger-silver-2",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "GER",
-    "athletes": [
-      "Dajana Eitberger"
-    ]
-  },
-  {
-    "id": "ger-silver-3",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "GER",
-    "athletes": [
-      "Athlete from GER"
-    ]
-  },
-  {
-    "id": "ger-bronze-1",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "GER",
-    "athletes": [
-      "Tobias Arlt"
-    ]
-  },
-  {
-    "id": "ger-bronze-2",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "GER",
-    "athletes": [
-      "Tobias Wendl"
     ]
   },
   {
@@ -1216,6 +1252,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "aus-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "AUS",
+    "athletes": [
+      "Athlete from AUS"
+    ]
+  },
+  {
     "id": "slo-gold-1",
     "event": "Event",
     "medal": "Gold",
@@ -1285,6 +1330,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "BUL",
     "athletes": [
       "Athlete from BUL"
+    ]
+  },
+  {
+    "id": "gbr-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "GBR",
+    "athletes": [
+      "Athlete from GBR"
     ]
   },
   {
