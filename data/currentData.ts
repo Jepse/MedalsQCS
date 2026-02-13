@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-13T13:28:55.155Z
+ * Timestamp: 2026-02-13T14:19:04.541Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -155,6 +155,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
   },
   {
     "id": "ita-bronze-8",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "ITA",
+    "athletes": [
+      "Athlete from ITA"
+    ]
+  },
+  {
+    "id": "ita-bronze-9",
     "event": "Event",
     "medal": "Bronze",
     "countryCode": "ITA",
@@ -1117,24 +1126,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
-    "id": "slo-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "SLO",
-    "athletes": [
-      "Nika Prevc"
-    ]
-  },
-  {
-    "id": "slo-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "SLO",
-    "athletes": [
-      "Nika Prevc"
-    ]
-  },
-  {
     "id": "cze-gold-1",
     "event": "Event",
     "medal": "Gold",
@@ -1150,6 +1141,51 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "CZE",
     "athletes": [
       "Athlete from CZE"
+    ]
+  },
+  {
+    "id": "cze-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "CZE",
+    "athletes": [
+      "Athlete from CZE"
+    ]
+  },
+  {
+    "id": "aus-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "AUS",
+    "athletes": [
+      "Athlete from AUS"
+    ]
+  },
+  {
+    "id": "aus-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "AUS",
+    "athletes": [
+      "Athlete from AUS"
+    ]
+  },
+  {
+    "id": "slo-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "SLO",
+    "athletes": [
+      "Nika Prevc"
+    ]
+  },
+  {
+    "id": "slo-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "SLO",
+    "athletes": [
+      "Nika Prevc"
     ]
   },
   {
@@ -1186,15 +1222,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "BUL",
     "athletes": [
       "Athlete from BUL"
-    ]
-  },
-  {
-    "id": "aus-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "AUS",
-    "athletes": [
-      "Athlete from AUS"
     ]
   },
   {
