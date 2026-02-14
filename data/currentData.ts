@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-14T17:08:33.581Z
+ * Timestamp: 2026-02-14T18:07:00.564Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -1396,33 +1396,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
-    "id": "fin-bronze-1",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "FIN",
-    "athletes": [
-      "Athlete from FIN"
-    ]
-  },
-  {
-    "id": "fin-bronze-2",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "FIN",
-    "athletes": [
-      "Athlete from FIN"
-    ]
-  },
-  {
-    "id": "fin-bronze-3",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "FIN",
-    "athletes": [
-      "Athlete from FIN"
-    ]
-  },
-  {
     "id": "slo-gold-1",
     "event": "Event",
     "medal": "Gold",
@@ -1474,6 +1447,24 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "NZL",
     "athletes": [
       "Athlete from NZL"
+    ]
+  },
+  {
+    "id": "fin-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "FIN",
+    "athletes": [
+      "Athlete from FIN"
+    ]
+  },
+  {
+    "id": "fin-bronze-2",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "FIN",
+    "athletes": [
+      "Athlete from FIN"
     ]
   },
   {
