@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-14T22:05:50.775Z
+ * Timestamp: 2026-02-14T23:07:09.344Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -1063,6 +1063,87 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "ned-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "NED",
+    "athletes": [
+      "Jens Van 'T Wout"
+    ]
+  },
+  {
+    "id": "ned-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "NED",
+    "athletes": [
+      "Jens Van 'T Wout"
+    ]
+  },
+  {
+    "id": "ned-gold-3",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "NED",
+    "athletes": [
+      "Athlete from NED"
+    ]
+  },
+  {
+    "id": "ned-gold-4",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "NED",
+    "athletes": [
+      "Athlete from NED"
+    ]
+  },
+  {
+    "id": "ned-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "NED",
+    "athletes": [
+      "Athlete from NED"
+    ]
+  },
+  {
+    "id": "ned-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "NED",
+    "athletes": [
+      "Athlete from NED"
+    ]
+  },
+  {
+    "id": "ned-silver-3",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "NED",
+    "athletes": [
+      "Athlete from NED"
+    ]
+  },
+  {
+    "id": "ned-silver-4",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "NED",
+    "athletes": [
+      "Athlete from NED"
+    ]
+  },
+  {
+    "id": "ned-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "NED",
+    "athletes": [
+      "Athlete from NED"
+    ]
+  },
+  {
     "id": "sui-gold-1",
     "event": "Event",
     "medal": "Gold",
@@ -1144,78 +1225,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
-    "id": "ned-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "NED",
-    "athletes": [
-      "Jens Van 'T Wout"
-    ]
-  },
-  {
-    "id": "ned-gold-2",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "NED",
-    "athletes": [
-      "Athlete from NED"
-    ]
-  },
-  {
-    "id": "ned-gold-3",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "NED",
-    "athletes": [
-      "Athlete from NED"
-    ]
-  },
-  {
-    "id": "ned-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "NED",
-    "athletes": [
-      "Athlete from NED"
-    ]
-  },
-  {
-    "id": "ned-silver-2",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "NED",
-    "athletes": [
-      "Athlete from NED"
-    ]
-  },
-  {
-    "id": "ned-silver-3",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "NED",
-    "athletes": [
-      "Athlete from NED"
-    ]
-  },
-  {
-    "id": "ned-silver-4",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "NED",
-    "athletes": [
-      "Athlete from NED"
-    ]
-  },
-  {
-    "id": "ned-bronze-1",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "NED",
-    "athletes": [
-      "Athlete from NED"
-    ]
-  },
-  {
     "id": "can-silver-1",
     "event": "Event",
     "medal": "Silver",
@@ -1288,6 +1297,51 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "kor-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "KOR",
+    "athletes": [
+      "Athlete from KOR"
+    ]
+  },
+  {
+    "id": "kor-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "KOR",
+    "athletes": [
+      "Athlete from KOR"
+    ]
+  },
+  {
+    "id": "kor-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "KOR",
+    "athletes": [
+      "Athlete from KOR"
+    ]
+  },
+  {
+    "id": "kor-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "KOR",
+    "athletes": [
+      "Athlete from KOR"
+    ]
+  },
+  {
+    "id": "kor-bronze-2",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "KOR",
+    "athletes": [
+      "Athlete from KOR"
+    ]
+  },
+  {
     "id": "aus-gold-1",
     "event": "Event",
     "medal": "Gold",
@@ -1357,42 +1411,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "CZE",
     "athletes": [
       "Athlete from CZE"
-    ]
-  },
-  {
-    "id": "kor-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "KOR",
-    "athletes": [
-      "Athlete from KOR"
-    ]
-  },
-  {
-    "id": "kor-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "KOR",
-    "athletes": [
-      "Athlete from KOR"
-    ]
-  },
-  {
-    "id": "kor-bronze-1",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "KOR",
-    "athletes": [
-      "Athlete from KOR"
-    ]
-  },
-  {
-    "id": "kor-bronze-2",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "KOR",
-    "athletes": [
-      "Athlete from KOR"
     ]
   },
   {
@@ -1504,6 +1522,24 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "lat-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "LAT",
+    "athletes": [
+      "Athlete from LAT"
+    ]
+  },
+  {
+    "id": "lat-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "LAT",
+    "athletes": [
+      "Athlete from LAT"
+    ]
+  },
+  {
     "id": "fin-bronze-1",
     "event": "Event",
     "medal": "Bronze",
@@ -1564,15 +1600,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "BRA",
     "athletes": [
       "Athlete from BRA"
-    ]
-  },
-  {
-    "id": "lat-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "LAT",
-    "athletes": [
-      "Athlete from LAT"
     ]
   },
   {
