@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-14T21:06:40.501Z
+ * Timestamp: 2026-02-14T22:05:50.775Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -393,7 +393,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "USA",
     "athletes": [
-      "Elizabeth Lemley"
+      "Athlete from USA"
     ]
   },
   {
@@ -474,7 +474,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Bronze",
     "countryCode": "USA",
     "athletes": [
-      "Elizabeth Lemley"
+      "Athlete from USA"
     ]
   },
   {
@@ -1149,7 +1149,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "NED",
     "athletes": [
-      "Athlete from NED"
+      "Jens Van 'T Wout"
     ]
   },
   {
