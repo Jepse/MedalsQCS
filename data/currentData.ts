@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-14T15:06:56.139Z
+ * Timestamp: 2026-02-14T16:07:13.944Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -83,6 +83,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
   },
   {
     "id": "nor-gold-9",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "NOR",
+    "athletes": [
+      "Athlete from NOR"
+    ]
+  },
+  {
+    "id": "nor-gold-10",
     "event": "Event",
     "medal": "Gold",
     "countryCode": "NOR",
@@ -613,6 +622,114 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "fra-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "FRA",
+    "athletes": [
+      "Lou Jeanmonnot"
+    ]
+  },
+  {
+    "id": "fra-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "FRA",
+    "athletes": [
+      "Julia Simon"
+    ]
+  },
+  {
+    "id": "fra-gold-3",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "FRA",
+    "athletes": [
+      "Julia Simon"
+    ]
+  },
+  {
+    "id": "fra-gold-4",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "FRA",
+    "athletes": [
+      "Quentin Fillon Maillet"
+    ]
+  },
+  {
+    "id": "fra-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "FRA",
+    "athletes": [
+      "Lou Jeanmonnot"
+    ]
+  },
+  {
+    "id": "fra-silver-2",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "FRA",
+    "athletes": [
+      "Eric Perrot"
+    ]
+  },
+  {
+    "id": "fra-silver-3",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "FRA",
+    "athletes": [
+      "Athlete from FRA"
+    ]
+  },
+  {
+    "id": "fra-silver-4",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "FRA",
+    "athletes": [
+      "Athlete from FRA"
+    ]
+  },
+  {
+    "id": "fra-silver-5",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "FRA",
+    "athletes": [
+      "Athlete from FRA"
+    ]
+  },
+  {
+    "id": "fra-silver-6",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "FRA",
+    "athletes": [
+      "Athlete from FRA"
+    ]
+  },
+  {
+    "id": "fra-bronze-1",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "FRA",
+    "athletes": [
+      "Lou Jeanmonnot"
+    ]
+  },
+  {
+    "id": "fra-bronze-2",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "FRA",
+    "athletes": [
+      "Athlete from FRA"
+    ]
+  },
+  {
     "id": "aut-gold-1",
     "event": "Event",
     "medal": "Gold",
@@ -817,96 +934,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "GER",
     "athletes": [
       "Athlete from GER"
-    ]
-  },
-  {
-    "id": "fra-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "FRA",
-    "athletes": [
-      "Julia Simon"
-    ]
-  },
-  {
-    "id": "fra-gold-2",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "FRA",
-    "athletes": [
-      "Julia Simon"
-    ]
-  },
-  {
-    "id": "fra-gold-3",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "FRA",
-    "athletes": [
-      "Quentin Fillon Maillet"
-    ]
-  },
-  {
-    "id": "fra-gold-4",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "FRA",
-    "athletes": [
-      "Quentin Fillon Maillet"
-    ]
-  },
-  {
-    "id": "fra-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "FRA",
-    "athletes": [
-      "Lou Jeanmonnot"
-    ]
-  },
-  {
-    "id": "fra-silver-2",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "FRA",
-    "athletes": [
-      "Eric Perrot"
-    ]
-  },
-  {
-    "id": "fra-silver-3",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "FRA",
-    "athletes": [
-      "Athlete from FRA"
-    ]
-  },
-  {
-    "id": "fra-silver-4",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "FRA",
-    "athletes": [
-      "Athlete from FRA"
-    ]
-  },
-  {
-    "id": "fra-silver-5",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "FRA",
-    "athletes": [
-      "Athlete from FRA"
-    ]
-  },
-  {
-    "id": "fra-bronze-1",
-    "event": "Event",
-    "medal": "Bronze",
-    "countryCode": "FRA",
-    "athletes": [
-      "Athlete from FRA"
     ]
   },
   {
