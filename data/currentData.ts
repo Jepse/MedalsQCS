@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-15T19:09:54.101Z
+ * Timestamp: 2026-02-15T20:05:38.702Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -51,7 +51,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "NOR",
     "athletes": [
-      "Maren Kirkeeide"
+      "Anna Odine Stroem"
     ]
   },
   {
@@ -69,7 +69,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "NOR",
     "athletes": [
-      "Athlete from NOR"
+      "Maren Kirkeeide"
     ]
   },
   {
@@ -114,7 +114,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Silver",
     "countryCode": "NOR",
     "athletes": [
-      "Sturla Holm Laegreid"
+      "Anna Odine Stroem"
     ]
   },
   {
@@ -123,7 +123,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Silver",
     "countryCode": "NOR",
     "athletes": [
-      "Maren Kirkeeide"
+      "Sturla Holm Laegreid"
     ]
   },
   {
@@ -132,7 +132,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Silver",
     "countryCode": "NOR",
     "athletes": [
-      "Anna Odine Stroem"
+      "Maren Kirkeeide"
     ]
   },
   {
@@ -155,6 +155,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
   },
   {
     "id": "nor-silver-6",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "NOR",
+    "athletes": [
+      "Athlete from NOR"
+    ]
+  },
+  {
+    "id": "nor-silver-7",
     "event": "Event",
     "medal": "Silver",
     "countryCode": "NOR",
@@ -218,6 +227,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
   },
   {
     "id": "nor-bronze-7",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "NOR",
+    "athletes": [
+      "Athlete from NOR"
+    ]
+  },
+  {
+    "id": "nor-bronze-8",
     "event": "Event",
     "medal": "Bronze",
     "countryCode": "NOR",
@@ -1567,6 +1585,42 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "slo-gold-1",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "SLO",
+    "athletes": [
+      "Nika Prevc"
+    ]
+  },
+  {
+    "id": "slo-gold-2",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "SLO",
+    "athletes": [
+      "Domen Prevc"
+    ]
+  },
+  {
+    "id": "slo-gold-3",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "SLO",
+    "athletes": [
+      "Domen Prevc"
+    ]
+  },
+  {
+    "id": "slo-silver-1",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "SLO",
+    "athletes": [
+      "Nika Prevc"
+    ]
+  },
+  {
     "id": "cze-gold-1",
     "event": "Event",
     "medal": "Gold",
@@ -1663,33 +1717,6 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "GBR",
     "athletes": [
       "Athlete from GBR"
-    ]
-  },
-  {
-    "id": "slo-gold-1",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "SLO",
-    "athletes": [
-      "Domen Prevc"
-    ]
-  },
-  {
-    "id": "slo-gold-2",
-    "event": "Event",
-    "medal": "Gold",
-    "countryCode": "SLO",
-    "athletes": [
-      "Domen Prevc"
-    ]
-  },
-  {
-    "id": "slo-silver-1",
-    "event": "Event",
-    "medal": "Silver",
-    "countryCode": "SLO",
-    "athletes": [
-      "Nika Prevc"
     ]
   },
   {
