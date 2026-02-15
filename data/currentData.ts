@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-15T13:20:18.966Z
+ * Timestamp: 2026-02-15T14:09:44.169Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -145,6 +145,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
     ]
   },
   {
+    "id": "nor-silver-5",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "NOR",
+    "athletes": [
+      "Athlete from NOR"
+    ]
+  },
+  {
     "id": "nor-bronze-1",
     "event": "Event",
     "medal": "Bronze",
@@ -231,7 +240,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "ITA",
     "athletes": [
-      "Arianna Fontana"
+      "Federica Brignone"
     ]
   },
   {
@@ -240,7 +249,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "ITA",
     "athletes": [
-      "Athlete from ITA"
+      "Federica Brignone"
     ]
   },
   {
@@ -249,11 +258,20 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "ITA",
     "athletes": [
-      "Athlete from ITA"
+      "Arianna Fontana"
     ]
   },
   {
     "id": "ita-gold-6",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "ITA",
+    "athletes": [
+      "Athlete from ITA"
+    ]
+  },
+  {
+    "id": "ita-gold-7",
     "event": "Event",
     "medal": "Gold",
     "countryCode": "ITA",
@@ -969,7 +987,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Silver",
     "countryCode": "GER",
     "athletes": [
-      "Dajana Eitberger"
+      "Athlete from GER"
     ]
   },
   {
@@ -1114,6 +1132,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "countryCode": "SWE",
     "athletes": [
       "Ebba Andersson"
+    ]
+  },
+  {
+    "id": "swe-silver-5",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "SWE",
+    "athletes": [
+      "Linn Svahn"
     ]
   },
   {
