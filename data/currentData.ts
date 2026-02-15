@@ -3,7 +3,7 @@ import { MedalWin, MedalType } from '../types';
 /**
  * AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
  * Scraped from: https://www.espn.com/olympics/winter/2026/medals and https://www.espn.com/olympics/winter/2026/medals/_/view/athletes
- * Timestamp: 2026-02-15T12:08:00.437Z
+ * Timestamp: 2026-02-15T13:20:18.966Z
  * 
  * Complete medal counts with real athlete names where available.
  * Regional attribution will match athlete names against Quebec/Scotland/Catalonia lists.
@@ -42,7 +42,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "NOR",
     "athletes": [
-      "Anna Odine Stroem"
+      "Johannes Høsflot Klæbo"
     ]
   },
   {
@@ -51,7 +51,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Gold",
     "countryCode": "NOR",
     "athletes": [
-      "Athlete from NOR"
+      "Anna Odine Stroem"
     ]
   },
   {
@@ -92,6 +92,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
   },
   {
     "id": "nor-gold-10",
+    "event": "Event",
+    "medal": "Gold",
+    "countryCode": "NOR",
+    "athletes": [
+      "Athlete from NOR"
+    ]
+  },
+  {
+    "id": "nor-gold-11",
     "event": "Event",
     "medal": "Gold",
     "countryCode": "NOR",
@@ -353,6 +362,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
   },
   {
     "id": "ita-bronze-9",
+    "event": "Event",
+    "medal": "Bronze",
+    "countryCode": "ITA",
+    "athletes": [
+      "Athlete from ITA"
+    ]
+  },
+  {
+    "id": "ita-bronze-10",
     "event": "Event",
     "medal": "Bronze",
     "countryCode": "ITA",
@@ -708,7 +726,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Silver",
     "countryCode": "FRA",
     "athletes": [
-      "Eric Perrot"
+      "Mathis Desloges"
     ]
   },
   {
@@ -717,7 +735,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Silver",
     "countryCode": "FRA",
     "athletes": [
-      "Athlete from FRA"
+      "Mathis Desloges"
     ]
   },
   {
@@ -726,7 +744,7 @@ export const OLYMPIC_DATA: MedalWin[] = [
     "medal": "Silver",
     "countryCode": "FRA",
     "athletes": [
-      "Athlete from FRA"
+      "Mathis Desloges"
     ]
   },
   {
@@ -740,6 +758,15 @@ export const OLYMPIC_DATA: MedalWin[] = [
   },
   {
     "id": "fra-silver-6",
+    "event": "Event",
+    "medal": "Silver",
+    "countryCode": "FRA",
+    "athletes": [
+      "Athlete from FRA"
+    ]
+  },
+  {
+    "id": "fra-silver-7",
     "event": "Event",
     "medal": "Silver",
     "countryCode": "FRA",
